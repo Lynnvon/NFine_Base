@@ -1,8 +1,8 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 NFine.Framework 版权所有
- * Author: NFine
- * Description: 溯维云远程看厂
- * Website：http://www.nfine.cn
+ * Copyright © 2016 微猴科技 版权所有
+ * Author: 微猴科技
+ * Description: 慧猪帮传感器
+ * Website：http://www.huizhubang.com
 *********************************************************************************/
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;

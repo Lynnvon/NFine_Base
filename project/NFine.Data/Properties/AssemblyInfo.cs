@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("溯维云远程看厂")]
-[assembly: AssemblyDescription("溯维云远程看厂")]
+[assembly: AssemblyTitle("慧猪帮传感器")]
+[assembly: AssemblyDescription("慧猪帮传感器")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NFine团队")]
-[assembly: AssemblyProduct("溯维云远程看厂（www.nfine.cn）")]
+[assembly: AssemblyProduct("慧猪帮传感器（www.nfine.cn）")]
 [assembly: AssemblyCopyright("Copyright © NFine 2016")]
 [assembly: AssemblyTrademark("NFine.Framework")]
 [assembly: AssemblyCulture("")]

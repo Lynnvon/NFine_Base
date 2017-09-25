@@ -4,19 +4,11 @@
  * Description: 慧猪帮传感器
  * Website：http://www.huizhubang.com
 *********************************************************************************/
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace NFine.Code
+namespace NFine.Domain._01_Infrastructure
 {
-    public class CacheFactory
+    public class Entity<TEntity>
     {
-        public static ICache Cache()
-        {
-            return new Cache();
-        }
+       
     }
 }

@@ -1,49 +1,21 @@
-﻿/*******************************************************************************
- * Copyright © 2016 NFine.Framework 版权所有
- * Author: NFine
- * Description: 溯维云远程看厂
- * Website：http://www.nfine.cn
-*********************************************************************************/
-using NFine.Code;
+﻿/************************************************************************************
+//Copyright (c) LynnVon  All Rights Reserved.
+//Author：  LynnVon
+//CreateTime： 2017年7月24日
+//Content: Entity
+************************************************************************************/
+
 using System;
 
-namespace NFine.Domain
+namespace NFine.Domain._01_Infrastructure
 {
-    public class IEntity<TEntity>
+    public interface IEntity
     {
-        public void Create()
-        {
-            var entity = this as ICreationAudited;
-            entity.F_Id = Common.GuId();
-            var LoginInfo = OperatorProvider.Provider.GetCurrent();
-            if (LoginInfo != null)
-            {
-                entity.F_CreatorUserId = LoginInfo.UserId;
-            }
-            entity.F_CreatorTime = DateTime.Now;
-            
-        }
-        public void Modify(string keyValue)
-        {
-            var entity = this as IModificationAudited;
-            entity.F_Id = keyValue;
-            var LoginInfo = OperatorProvider.Provider.GetCurrent();
-            if (LoginInfo != null)
-            {
-                entity.F_LastModifyUserId = LoginInfo.UserId;
-            }
-            entity.F_LastModifyTime = DateTime.Now;
-        }
-        public void Remove()
-        {
-            var entity = this as IDeleteAudited;
-            var LoginInfo = OperatorProvider.Provider.GetCurrent();
-            if (LoginInfo != null)
-            {
-                entity.F_DeleteUserId = LoginInfo.UserId;
-            }
-            entity.F_DeleteTime = DateTime.Now;
-            entity.F_DeleteMark = true;
-        }
+        //记录Id guid
+        string RecordId { get; set; }
+        //记录时间
+        DateTime? RecordTime { get; set; }
+        //传感器类型
+        string SensorType { get; set; }
     }
 }

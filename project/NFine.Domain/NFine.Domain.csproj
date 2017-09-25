@@ -43,11 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="01 Infrastructure\ICreationAudited.cs" />
-    <Compile Include="01 Infrastructure\IDeleteAudited.cs" />
+    <Compile Include="01 Infrastructure\Entity.cs" />
     <Compile Include="01 Infrastructure\IEntity.cs" />
-    <Compile Include="01 Infrastructure\IModificationAudited.cs" />
-    <Compile Include="02 ViewModel\AuthorizeActionModel.cs" />
+    <Compile Include="02 Entity\HumituresEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,10 +58,7 @@
       <Name>NFine.Data</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="03 Entity\" />
-    <Folder Include="04 IRepository\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
